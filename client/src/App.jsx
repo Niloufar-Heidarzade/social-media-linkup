@@ -6,6 +6,8 @@ import Messages from "./pages/Messages";
 import Connections from "./pages/Connections";
 import Discover from "./pages/Discover";
 import Profile from "./pages/Profile";
+import ChatBox from "./pages/ChatBox";
+import CreatePost from "./pages/CreatePost";
 
 const App = () => {
   return (
@@ -14,7 +16,7 @@ const App = () => {
         <Route path="/" element={<Login />}>
           <Route index element={<Feed />} />
           <Route path="messages" element={<Messages />} />
-          <Route path="messages/:userId" element={<Chat />} />
+          <Route path="messages/:userId" element={<ChatBox />} />
           <Route path="connections" element={<Connections />} />
           <Route path="discover" element={<Discover />} />
           <Route path="profile" element={<Profile />} />
